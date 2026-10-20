@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: #5f3dc4;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+main.container {
+  flex: 1;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header {
+  background: #5f3dc4;
+  color: #fff;
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.flash {
+  background: #fff3bf;
+  border-left: 4px solid #f59f00;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.muted {
+  color: #868e96;
+}
+
+/* ---------- Формы ---------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 420px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.inline-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.inline-form input[type="text"] {
+  flex: 1;
+  min-width: 160px;
+}
+
+input,
+select {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background: #fff;
+}
+
+button {
+  font: inherit;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #5f3dc4;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5132a8;
+}
+
+/* ---------- Таблица оценок ---------- */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.grade {
+  display: inline-block;
+  min-width: 26px;
+  margin: 2px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.grade--5 { background: #2b8a3e; }
+.grade--4 { background: #1971c2; }
+.grade--3 { background: #e67700; }
+.grade--2 { background: #c92a2a; }
+
+/* ---------- Домашние задания ---------- */
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #ced4da;
+}
+
+.card h3,
+.card p {
+  margin: 0 0 4px;
+}
+
+.card--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card--ok { border-left-color: #1971c2; }
+.card--today { border-left-color: #f59f00; }
+.card--late { border-left-color: #c92a2a; }
+.card--done { border-left-color: #2b8a3e; opacity: 0.7; }
+
+.footer {
+  background: #e9ecef;
+  color: #868e96;
+  font-size: 14px;
+  padding: 12px 0;
+}
